@@ -4,8 +4,8 @@
 
 ## Supported tags and respective `Dockerfile` links
 
-- [`latest`, `33` (*33/Dockerfile*)](https://github.com/hybridadmin/docker-fedora-ansible/tree/main/33/Dockerfile)
-- [`32` (*32/Dockerfile*)](https://github.com/hybridadmin/docker-fedora-ansible/tree/main/32/Dockerfile)
+- [`latest`, `33`](https://github.com/hybridadmin/docker-fedora-ansible/tree/main/33/Dockerfile)
+- [`32`](https://github.com/hybridadmin/docker-fedora-ansible/tree/main/32/Dockerfile)
 
 ## How to Build the image
 
