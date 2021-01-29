@@ -1,5 +1,5 @@
 # Fedora Docker Images with ansible and systemd
-![Build](https://github.com/hybridadmin/docker-ansible-fedora/workflows/Build/badge.svg?branch=main)
+![Build](https://github.com/hybridadmin/docker-ansible-fedora/workflows/Build/badge.svg?branch=main) ![Docker Pulls](https://img.shields.io/docker/pulls/hybridadmin/ansible-fedora)
 
 > Fedora Docker images to be used for testing ansible playbooks and roles.
 
