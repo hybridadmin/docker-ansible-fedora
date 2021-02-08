@@ -22,6 +22,10 @@ jobs:
             version: "33"
             platform: "linux/amd64"
             tags: "33,latest"
+          - image: fedora
+            version: "34"
+            platform: "linux/amd64"
+            tags: "34,rawhide"
 
     steps:
       - name: Checkout repository
