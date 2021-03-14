@@ -11,6 +11,7 @@ RUN dnf -y install rpm dnf-plugins-core \
  && dnf -y install \
       initscripts \
       glibc-langpack-en \
+      iproute \
       sudo \
       which \
       hostname \

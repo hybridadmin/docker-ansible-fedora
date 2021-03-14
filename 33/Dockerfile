@@ -13,6 +13,7 @@ RUN dnf -y install rpm dnf-plugins-core \
       glibc-langpack-en \
       sudo \
       which \
+      iproute \
       hostname \
       libyaml-devel \
       python3 \
