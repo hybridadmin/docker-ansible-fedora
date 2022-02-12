@@ -3,7 +3,7 @@ LABEL maintainer="Tinashe Chikomo <tinashe@chikomo.net>"
 
 ENV container docker
 
-ENV pip_packages "ansible pymysql"
+ENV pip_packages "ansible yamllint ansible-lint pymysql"
 
 # Install requirements.
 RUN dnf -y install rpm dnf-plugins-core \
