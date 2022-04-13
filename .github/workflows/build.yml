@@ -17,18 +17,18 @@ jobs:
           - image: fedora
             version: "32"
             tags: "32"
-            platform: "linux/amd64,linux/arm64,linux/arm/v7"
+            platform: "linux/amd64,linux/arm64"
           - image: fedora
             version: "33"
-            platform: "linux/amd64,linux/arm64,linux/arm/v7"
+            platform: "linux/amd64,linux/arm64"
             tags: "33"
           - image: fedora
             version: "34"
-            platform: "linux/amd64,linux/arm64,linux/arm/v7"
+            platform: "linux/amd64,linux/arm64"
             tags: "34"
           - image: fedora
             version: "35"
-            platform: "linux/amd64,linux/arm64,linux/arm/v7"
+            platform: "linux/amd64,linux/arm64"
             tags: "35,latest"
 
     steps:
