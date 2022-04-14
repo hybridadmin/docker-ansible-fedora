@@ -19,7 +19,7 @@ RUN dnf -y install rpm dnf-plugins-core \
       python3 \
       python3-pip \
       python3-pyyaml \
-      gcc libffi-devel \
+      gcc libffi-devel python3-devel \
  && dnf clean all
 
 # Install Ansible via Pip.
