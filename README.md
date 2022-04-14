@@ -13,8 +13,11 @@
 
 ## Supported tags and respective `Dockerfile` links
 
-- [`rawhide`, `34`](https://github.com/hybridadmin/docker-ansible-fedora/tree/main/34/Dockerfile)
-- [`latest`, `33`](https://github.com/hybridadmin/docker-ansible-fedora/tree/main/33/Dockerfile)
+- [`rawhide`, `37`](https://github.com/hybridadmin/docker-ansible-fedora/tree/main/37/Dockerfile)
+- [`36`](https://github.com/hybridadmin/docker-ansible-fedora/tree/main/36/Dockerfile)
+- [`latest`, `35`](https://github.com/hybridadmin/docker-ansible-fedora/tree/main/35/Dockerfile)
+- [`34`](https://github.com/hybridadmin/docker-ansible-fedora/tree/main/34/Dockerfile)
+- [`33`](https://github.com/hybridadmin/docker-ansible-fedora/tree/main/33/Dockerfile)
 - [`32`](https://github.com/hybridadmin/docker-ansible-fedora/tree/main/32/Dockerfile)
 
 ## How to Build the image
