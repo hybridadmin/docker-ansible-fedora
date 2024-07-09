@@ -15,29 +15,17 @@ jobs:
       matrix:
         distribution:
           - image: fedora
-            version: "32"
-            tags: "32"
+            version: "38"
             platform: "linux/amd64"
+            tags: "38"
           - image: fedora
-            version: "33"
+            version: "39"
             platform: "linux/amd64"
-            tags: "33"
+            tags: "39"
           - image: fedora
-            version: "34"
+            version: "40"
             platform: "linux/amd64"
-            tags: "34"
-          - image: fedora
-            version: "35"
-            platform: "linux/amd64"
-            tags: "35,latest"
-          - image: fedora
-            version: "36"
-            platform: "linux/amd64"
-            tags: "36"
-          - image: fedora
-            version: "37"
-            platform: "linux/amd64"
-            tags: "37,rawhide"
+            tags: "40"
 
 
     steps:
