@@ -1,6 +1,6 @@
 # Fedora Docker Images with ansible and systemd
 
-![Build](https://github.com/hybridadmin/docker-ansible-fedora/workflows/Build/badge.svg?branch=main) ![Docker Pulls](https://img.shields.io/docker/pulls/hybridadmin/ansible-fedora)
+![Build](https://img.shields.io/github/actions/workflow/status/hybridadmin/docker-ansible-fedora/build.yml) ![Docker Pulls](https://img.shields.io/docker/pulls/hybridadmin/ansible-fedora)
 
 > Fedora Docker images to be used for testing ansible playbooks and roles.
 
@@ -13,12 +13,10 @@
 
 ## Supported tags and respective `Dockerfile` links
 
-- [`rawhide`, `37`](https://github.com/hybridadmin/docker-ansible-fedora/tree/main/37/Dockerfile)
-- [`36`](https://github.com/hybridadmin/docker-ansible-fedora/tree/main/36/Dockerfile)
-- [`latest`, `35`](https://github.com/hybridadmin/docker-ansible-fedora/tree/main/35/Dockerfile)
-- [`34`](https://github.com/hybridadmin/docker-ansible-fedora/tree/main/34/Dockerfile)
-- [`33`](https://github.com/hybridadmin/docker-ansible-fedora/tree/main/33/Dockerfile)
-- [`32`](https://github.com/hybridadmin/docker-ansible-fedora/tree/main/32/Dockerfile)
+- [`42`, `rawhide`](https://github.com/hybridadmin/docker-ansible-fedora/tree/main/42/Dockerfile)
+- [`41`, `latest`](https://github.com/hybridadmin/docker-ansible-fedora/tree/main/41/Dockerfile)
+- [`40`](https://github.com/hybridadmin/docker-ansible-fedora/tree/main/40/Dockerfile)
+- [`39`](https://github.com/hybridadmin/docker-ansible-fedora/tree/main/39/Dockerfile)
 
 ## How to Build the image
 
@@ -40,7 +38,7 @@ docker pull hybridadmin/ansible-fedora:latest
 Run a container using the image with the following command:
 
 ```console
-docker run -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro hybridadmin/ansible-fedora:latest
+docker run -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw --cgroupns=host hybridadmin/ansible-fedora:latest
 ```
 
 Use ansible inside the container:
