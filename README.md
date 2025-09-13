@@ -13,8 +13,8 @@
 
 ## Supported tags and respective `Dockerfile` links
 
-- [`42`, `rawhide`](https://github.com/hybridadmin/docker-ansible-fedora/tree/main/42/Dockerfile)
-- [`41`, `latest`](https://github.com/hybridadmin/docker-ansible-fedora/tree/main/41/Dockerfile)
+- [`42`, `latest`](https://github.com/hybridadmin/docker-ansible-fedora/tree/main/42/Dockerfile)
+- [`41`](https://github.com/hybridadmin/docker-ansible-fedora/tree/main/41/Dockerfile)
 - [`40`](https://github.com/hybridadmin/docker-ansible-fedora/tree/main/40/Dockerfile)
 - [`39`](https://github.com/hybridadmin/docker-ansible-fedora/tree/main/39/Dockerfile)
 
