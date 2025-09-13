@@ -15,21 +15,17 @@ jobs:
       matrix:
         distribution:
           - image: fedora
-            version: "39"
-            platform: "linux/amd64"
-            tags: "39"
-          - image: fedora
             version: "40"
             platform: "linux/amd64"
             tags: "40"
           - image: fedora
             version: "41"
             platform: "linux/amd64"
-            tags: "41, latest"
+            tags: "41"
           - image: fedora
             version: "42"
             platform: "linux/amd64"
-            tags: "42, rawhide"
+            tags: "42, latest"
 
     steps:
       - name: Checkout repository
