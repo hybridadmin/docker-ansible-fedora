@@ -1,14 +1,14 @@
 FROM fedora:42
 LABEL maintainer="Tinashe Chikomo <tinashe@chikomo.net>"
 
-ENV container docker
+ENV container="docker"
 
-ENV pip_packages "ansible pymysql"
+ENV pip_packages="ansible"
 
-RUN dnf -y update && dnf clean all
+RUN dnf5 -y update && dnf5 clean all
 
 # Enable systemd.
-RUN dnf -y install systemd && dnf clean all && \
+RUN dnf5 -y install systemd && dnf5 clean all && \
   (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == systemd-tmpfiles-setup.service ] || rm -f $i; done); \
   rm -f /lib/systemd/system/multi-user.target.wants/*;\
   rm -f /etc/systemd/system/*.wants/*;\
@@ -19,13 +19,13 @@ RUN dnf -y install systemd && dnf clean all && \
   rm -f /lib/systemd/system/anaconda.target.wants/*;
 
 # Install pip and other requirements.
-RUN dnf makecache \
-  && dnf -y install \
+RUN dnf5 makecache \
+  && dnf5 -y install \
     python3-pip \
     sudo \
     which \
-    python3-dnf \
-  && dnf clean all
+    python3-libdnf5 \
+  && dnf5 clean all
 
 # Install Ansible via Pip.
 RUN pip3 install $pip_packages
