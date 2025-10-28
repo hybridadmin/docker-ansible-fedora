@@ -2,7 +2,6 @@ FROM fedora:41
 LABEL maintainer="Tinashe Chikomo <tinashe@chikomo.net>"
 
 ENV container=docker
-
 ENV pip_packages="ansible"
 
 RUN dnf5 -y update && dnf5 clean all

@@ -1,9 +1,8 @@
 FROM fedora:40
 LABEL maintainer="Tinashe Chikomo <tinashe@chikomo.net>"
 
-ENV container docker
-
-ENV pip_packages "ansible pymysql"
+ENV container=docker
+ENV pip_packages="ansible pymysql"
 
 RUN dnf -y update && dnf clean all
 
