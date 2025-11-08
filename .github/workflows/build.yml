@@ -10,14 +10,14 @@ jobs:
       matrix:
         distro:
           - image: fedora
-            version: "40"
-            tags: "40"
-          - image: fedora
             version: "41"
             tags: "41"
           - image: fedora
             version: "42"
-            tags: "42, latest"
+            tags: "42"
+          - image: fedora
+            version: "43"
+            tags: "43, latest"
     uses: hybridadmin/reuse-workflows/.github/workflows/build_push.yml@main
     secrets: inherit
     with:
