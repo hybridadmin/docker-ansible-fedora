@@ -2,7 +2,7 @@ FROM fedora:43
 LABEL maintainer="Tinashe Chikomo <tinashe@chikomo.net>"
 
 ENV container="docker"
-ENV pip_packages="ansible"
+ENV pip_packages="ansible PyMySQL"
 
 RUN dnf5 -y update && dnf5 clean all
 
